@@ -1,0 +1,3083 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.campustrack:campustrack-backend >-----------------
+[INFO] Building CampusTrack Backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ campustrack-backend ---
+[INFO] Deleting C:\mini project\campustrack-backend\campustrack-backend\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ campustrack-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ campustrack-backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 19 source files with javac [debug parameters release 25] to target\classes
+mvn : WARNING: A 
+terminally deprecated 
+method in 
+sun.misc.Unsafe has 
+been called
+At line:1 char:1
++ mvn clean compile 
+spring-boot:run 2>&1 
+| Out-File -FilePath 
+"c:\mini  ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
+    + CategoryInfo    
+          : 
+NotSpecified: (W    
+ARNING: A term...has  
+   been 
+called:String) [    
+], RemoteException
+    + 
+FullyQualifiedError   
+ Id : 
+NativeCommandErr    or
+ 
+WARNING: sun.misc.Unsa
+fe::objectFieldOffset 
+has been called by 
+lombok.permit.Permit
+WARNING: Please 
+consider reporting 
+this to the 
+maintainers of class 
+lombok.permit.Permit
+WARNING: sun.misc.Unsa
+fe::objectFieldOffset 
+will be removed in a 
+future release
+[INFO] 
+[INFO] >>> spring-boot:3.4.4:run (default-cli) > test-compile @ campustrack-backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ campustrack-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ campustrack-backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ campustrack-backend ---
+[INFO] skip non existing resourceDirectory C:\mini project\campustrack-backend\campustrack-backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ campustrack-backend ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.4.4:run (default-cli) < test-compile @ campustrack-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.4:run (default-cli) @ campustrack-backend ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.4.4/spring-boot-buildpack-platform-3.4.4.pom
+Progress (1): 971 B
+Progress (1): 2.7 kB
+Progress (1): 3.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.4.4/spring-boot-buildpack-platform-3.4.4.pom (3.2 kB at 8.9 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.4.2/httpclient5-5.4.2.pom
+Progress (1): 867 B
+Progress (1): 2.0 kB
+Progress (1): 4.8 kB
+Progress (1): 6.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.4.2/httpclient5-5.4.2.pom (6.1 kB at 164 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5-parent/5.4.2/httpclient5-parent-5.4.2.pom
+Progress (1): 839 B
+Progress (1): 1.9 kB
+Progress (1): 3.5 kB
+Progress (1): 7.8 kB
+Progress (1): 9.3 kB
+Progress (1): 13 kB 
+Progress (1): 16 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5-parent/5.4.2/httpclient5-parent-5.4.2.pom (16 kB at 429 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.3.3/httpcore5-5.3.3.pom
+Progress (1): 883 B
+Progress (1): 2.0 kB
+Progress (1): 3.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.3.3/httpcore5-5.3.3.pom (3.9 kB at 120 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-parent/5.3.3/httpcore5-parent-5.3.3.pom
+Progress (1): 846 B
+Progress (1): 1.9 kB
+Progress (1): 3.6 kB
+Progress (1): 6.8 kB
+Progress (1): 8.5 kB
+Progress (1): 11 kB 
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-parent/5.3.3/httpcore5-parent-5.3.3.pom (14 kB at 450 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.3.3/httpcore5-h2-5.3.3.pom
+Progress (1): 890 B
+Progress (1): 2.1 kB
+Progress (1): 3.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.3.3/httpcore5-h2-5.3.3.pom (3.6 kB at 121 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.4.4/spring-boot-loader-tools-3.4.4.pom
+Progress (1): 1.0 kB
+Progress (1): 2.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.4.4/spring-boot-loader-tools-3.4.4.pom (2.2 kB at 62 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.4.4/spring-boot-buildpack-platform-3.4.4.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.4.2/httpclient5-5.4.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.3.3/httpcore5-5.3.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.3.3/httpcore5-h2-5.3.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.4.4/spring-boot-loader-tools-3.4.4.jar
+Progress (1): 0.9/909 kB
+Progress (1): 2.3/909 kB
+Progress (1): 3.6/909 kB
+Progress (1): 5.0/909 kB
+Progress (1): 6.4/909 kB
+Progress (1): 7.7/909 kB
+Progress (1): 9.1/909 kB
+Progress (1): 10/909 kB 
+Progress (1): 12/909 kB
+Progress (1): 13/909 kB
+Progress (1): 14/909 kB
+Progress (1): 16/909 kB
+Progress (1): 17/909 kB
+Progress (1): 18/909 kB
+Progress (1): 20/909 kB
+Progress (1): 21/909 kB
+Progress (1): 23/909 kB
+Progress (1): 24/909 kB
+Progress (1): 25/909 kB
+Progress (1): 29/909 kB
+Progress (1): 34/909 kB
+Progress (1): 38/909 kB
+Progress (1): 42/909 kB
+Progress (1): 46/909 kB
+Progress (1): 51/909 kB
+Progress (1): 55/909 kB
+Progress (1): 59/909 kB
+Progress (1): 63/909 kB
+Progress (1): 66/909 kB
+Progress (1): 70/909 kB
+Progress (1): 74/909 kB
+Progress (1): 78/909 kB
+Progress (1): 82/909 kB
+Progress (1): 87/909 kB
+Progress (1): 91/909 kB
+Progress (1): 95/909 kB
+Progress (1): 98/909 kB
+Progress (1): 103/909 kB
+Progress (1): 107/909 kB
+Progress (1): 111/909 kB
+Progress (1): 115/909 kB
+Progress (1): 119/909 kB
+Progress (1): 123/909 kB
+Progress (1): 127/909 kB
+Progress (1): 132/909 kB
+Progress (1): 136/909 kB
+Progress (1): 139/909 kB
+Progress (1): 143/909 kB
+Progress (1): 148/909 kB
+Progress (1): 152/909 kB
+Progress (1): 156/909 kB
+Progress (1): 160/909 kB
+Progress (1): 165/909 kB
+Progress (1): 169/909 kB
+Progress (1): 173/909 kB
+Progress (1): 177/909 kB
+Progress (1): 180/909 kB
+Progress (1): 184/909 kB
+Progress (1): 189/909 kB
+Progress (2): 189/909 kB | 0.9/907 kB
+Progress (2): 189/909 kB | 2.3/907 kB
+Progress (2): 205/909 kB | 2.3/907 kB
+Progress (2): 205/909 kB | 2.3/907 kB
+Progress (2): 205/909 kB | 3.6/907 kB
+Progress (2): 205/909 kB | 5.0/907 kB
+Progress (2): 205/909 kB | 6.4/907 kB
+Progress (2): 205/909 kB | 7.7/907 kB
+Progress (2): 205/909 kB | 9.1/907 kB
+Progress (2): 205/909 kB | 10/907 kB 
+Progress (2): 205/909 kB | 12/907 kB
+Progress (2): 205/909 kB | 13/907 kB
+Progress (2): 205/909 kB | 14/907 kB
+Progress (2): 205/909 kB | 16/907 kB
+Progress (2): 205/909 kB | 17/907 kB
+Progress (2): 205/909 kB | 18/907 kB
+Progress (2): 205/909 kB | 20/907 kB
+Progress (2): 205/909 kB | 21/907 kB
+Progress (2): 205/909 kB | 22/907 kB
+Progress (2): 205/909 kB | 24/907 kB
+Progress (2): 205/909 kB | 25/907 kB
+Progress (2): 205/909 kB | 27/907 kB
+Progress (2): 205/909 kB | 28/907 kB
+Progress (2): 205/909 kB | 29/907 kB
+Progress (2): 205/909 kB | 31/907 kB
+Progress (2): 205/909 kB | 32/907 kB
+Progress (2): 205/909 kB | 33/907 kB
+Progress (2): 205/909 kB | 35/907 kB
+Progress (2): 205/909 kB | 36/907 kB
+Progress (2): 205/909 kB | 38/907 kB
+Progress (2): 205/909 kB | 39/907 kB
+Progress (2): 205/909 kB | 40/907 kB
+Progress (2): 205/909 kB | 42/907 kB
+Progress (2): 205/909 kB | 43/907 kB
+Progress (2): 205/909 kB | 44/907 kB
+Progress (2): 205/909 kB | 46/907 kB
+Progress (2): 205/909 kB | 47/907 kB
+Progress (2): 205/909 kB | 49/907 kB
+Progress (2): 205/909 kB | 50/907 kB
+Progress (2): 205/909 kB | 51/907 kB
+Progress (2): 205/909 kB | 53/907 kB
+Progress (2): 205/909 kB | 54/907 kB
+Progress (2): 205/909 kB | 55/907 kB
+Progress (2): 205/909 kB | 60/907 kB
+Progress (3): 205/909 kB | 60/907 kB | 0.9/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 2.3/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 3.6/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 5.0/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 6.4/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 7.7/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 9.1/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 10/465 kB 
+Progress (3): 205/909 kB | 60/907 kB | 12/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 13/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 14/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 16/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 17/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 18/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 20/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 21/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 23/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 24/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 25/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 27/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 28/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 29/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 31/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 32/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 33/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 35/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 36/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 38/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 39/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 40/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 42/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 43/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 44/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 46/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 47/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 49/465 kB
+Progress (3): 205/909 kB | 60/907 kB | 50/465 kB
+Progress (4): 205/909 kB | 60/907 kB | 50/465 kB | 0.9/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 51/465 kB | 0.9/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 51/465 kB | 2.3/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 51/465 kB | 3.6/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 53/465 kB | 3.6/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 53/465 kB | 5.0/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 54/465 kB | 5.0/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 54/465 kB | 6.4/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 54/465 kB | 7.7/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 55/465 kB | 7.7/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 55/465 kB | 9.1/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 55/465 kB | 10/241 kB 
+Progress (4): 205/909 kB | 60/907 kB | 55/465 kB | 12/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 55/465 kB | 12/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 12/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 14/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 15/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 16/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 18/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 19/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 21/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 22/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 23/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 25/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 26/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 27/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 29/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 30/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 31/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 33/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 34/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 36/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 37/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 38/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 40/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 41/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 42/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 44/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 45/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 47/241 kB
+Progress (4): 205/909 kB | 60/907 kB | 60/465 kB | 48/241 kB
+Progress (4): 221/909 kB | 60/907 kB | 60/465 kB | 48/241 kB
+Progress (4): 221/909 kB | 60/907 kB | 60/465 kB | 49/241 kB
+Progress (4): 221/909 kB | 60/907 kB | 60/465 kB | 51/241 kB
+Progress (4): 221/909 kB | 60/907 kB | 60/465 kB | 52/241 kB
+Progress (4): 221/909 kB | 60/907 kB | 60/465 kB | 53/241 kB
+Progress (4): 221/909 kB | 60/907 kB | 60/465 kB | 55/241 kB
+Progress (4): 221/909 kB | 60/907 kB | 60/465 kB | 59/241 kB
+Progress (4): 221/909 kB | 60/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 238/909 kB | 60/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 238/909 kB | 64/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 254/909 kB | 64/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 271/909 kB | 64/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 287/909 kB | 64/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 303/909 kB | 64/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 303/909 kB | 68/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 303/909 kB | 69/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 303/909 kB | 73/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 303/909 kB | 77/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 303/909 kB | 82/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 303/909 kB | 86/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 303/909 kB | 90/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 303/909 kB | 94/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 303/909 kB | 98/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 303/909 kB | 103/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 303/909 kB | 107/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 320/909 kB | 107/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 336/909 kB | 107/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 352/909 kB | 107/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 369/909 kB | 107/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 385/909 kB | 107/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 401/909 kB | 107/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 418/909 kB | 107/907 kB | 60/465 kB | 63/241 kB
+Progress (4): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 0.9/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 2.3/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 3.6/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 5.0/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 6.4/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 7.7/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 8.2/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 9.6/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 11/299 kB 
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 12/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 14/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 15/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 16/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 18/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 19/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 20/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 22/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 23/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 25/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 26/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 27/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 29/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 30/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 31/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 33/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 34/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 36/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 37/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 38/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 40/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 41/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 42/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 44/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 45/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 46/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 48/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 49/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 51/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 52/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 53/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 55/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 59/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 60/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 107/907 kB | 64/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 111/907 kB | 64/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 111/907 kB | 68/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 111/907 kB | 69/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 111/907 kB | 73/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 111/907 kB | 77/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 115/907 kB | 77/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 115/907 kB | 82/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 120/907 kB | 82/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 120/907 kB | 86/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 120/907 kB | 90/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 124/907 kB | 90/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 124/907 kB | 94/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 94/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 99/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 103/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 107/465 kB | 63/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 107/465 kB | 67/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 111/465 kB | 67/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 115/465 kB | 67/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 120/465 kB | 67/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 124/465 kB | 67/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 67/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 72/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 76/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 80/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 84/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 89/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 93/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 97/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 101/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 105/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 110/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 114/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 128/907 kB | 128/465 kB | 118/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 132/907 kB | 128/465 kB | 118/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 137/907 kB | 128/465 kB | 118/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 137/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 141/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 145/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 149/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 153/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 158/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 162/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 434/909 kB | 166/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 451/909 kB | 166/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 451/909 kB | 170/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 451/909 kB | 175/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 451/909 kB | 179/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 467/909 kB | 179/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 483/909 kB | 179/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 500/909 kB | 179/907 kB | 128/465 kB | 122/241 kB | 63/299 kB
+Progress (5): 500/909 kB | 179/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 500/909 kB | 183/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 500/909 kB | 187/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 500/909 kB | 192/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 516/909 kB | 192/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 516/909 kB | 192/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 516/909 kB | 196/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 516/909 kB | 197/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 516/909 kB | 201/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 516/909 kB | 205/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 516/909 kB | 209/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 516/909 kB | 213/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 532/909 kB | 213/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 549/909 kB | 213/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 565/909 kB | 213/907 kB | 128/465 kB | 127/241 kB | 63/299 kB
+Progress (5): 565/909 kB | 213/907 kB | 128/465 kB | 127/241 kB | 66/299 kB
+Progress (5): 582/909 kB | 213/907 kB | 128/465 kB | 127/241 kB | 66/299 kB
+Progress (5): 582/909 kB | 213/907 kB | 128/465 kB | 127/241 kB | 70/299 kB
+Progress (5): 582/909 kB | 229/907 kB | 128/465 kB | 127/241 kB | 70/299 kB
+Progress (5): 582/909 kB | 229/907 kB | 128/465 kB | 127/241 kB | 74/299 kB
+Progress (5): 582/909 kB | 229/907 kB | 128/465 kB | 127/241 kB | 78/299 kB
+Progress (5): 598/909 kB | 229/907 kB | 128/465 kB | 127/241 kB | 78/299 kB
+Progress (5): 598/909 kB | 229/907 kB | 128/465 kB | 127/241 kB | 82/299 kB
+Progress (5): 614/909 kB | 229/907 kB | 128/465 kB | 127/241 kB | 82/299 kB
+Progress (5): 631/909 kB | 229/907 kB | 128/465 kB | 127/241 kB | 82/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 128/465 kB | 127/241 kB | 82/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 128/465 kB | 127/241 kB | 87/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 128/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 132/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 134/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 139/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 143/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 147/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 151/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 156/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 160/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 164/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 168/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 173/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 177/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 181/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 185/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 189/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 194/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 229/907 kB | 198/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 246/907 kB | 198/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 246/907 kB | 202/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 262/907 kB | 202/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 279/907 kB | 202/465 kB | 127/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 279/907 kB | 202/465 kB | 131/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 295/907 kB | 202/465 kB | 131/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 295/907 kB | 202/465 kB | 135/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 295/907 kB | 202/465 kB | 139/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 295/907 kB | 202/465 kB | 143/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 295/907 kB | 202/465 kB | 148/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 295/907 kB | 202/465 kB | 152/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 295/907 kB | 202/465 kB | 156/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 295/907 kB | 202/465 kB | 160/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 295/907 kB | 202/465 kB | 165/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 295/907 kB | 202/465 kB | 169/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 311/907 kB | 202/465 kB | 169/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 311/907 kB | 202/465 kB | 173/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 311/907 kB | 202/465 kB | 177/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 328/907 kB | 202/465 kB | 177/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 328/907 kB | 206/465 kB | 177/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 328/907 kB | 208/465 kB | 177/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 328/907 kB | 212/465 kB | 177/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 344/907 kB | 212/465 kB | 177/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 344/907 kB | 217/465 kB | 177/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 344/907 kB | 217/465 kB | 181/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 344/907 kB | 217/465 kB | 186/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 344/907 kB | 233/465 kB | 186/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 344/907 kB | 233/465 kB | 190/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 344/907 kB | 249/465 kB | 190/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 360/907 kB | 249/465 kB | 190/241 kB | 91/299 kB
+Progress (5): 647/909 kB | 360/907 kB | 249/465 kB | 190/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 360/907 kB | 266/465 kB | 190/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 360/907 kB | 282/465 kB | 190/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 360/907 kB | 282/465 kB | 194/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 360/907 kB | 299/465 kB | 194/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 360/907 kB | 315/465 kB | 194/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 360/907 kB | 315/465 kB | 198/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 360/907 kB | 315/465 kB | 203/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 360/907 kB | 315/465 kB | 207/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 377/907 kB | 315/465 kB | 207/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 377/907 kB | 315/465 kB | 211/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 393/907 kB | 315/465 kB | 211/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 393/907 kB | 315/465 kB | 215/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 393/907 kB | 315/465 kB | 219/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 410/907 kB | 315/465 kB | 219/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 410/907 kB | 315/465 kB | 224/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 426/907 kB | 315/465 kB | 224/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 426/907 kB | 315/465 kB | 240/241 kB | 95/299 kB
+Progress (5): 647/909 kB | 426/907 kB | 315/465 kB | 241 kB | 95/299 kB    
+Progress (5): 647/909 kB | 426/907 kB | 331/465 kB | 241 kB | 95/299 kB
+Progress (5): 647/909 kB | 426/907 kB | 339/465 kB | 241 kB | 95/299 kB
+Progress (5): 647/909 kB | 426/907 kB | 356/465 kB | 241 kB | 95/299 kB
+Progress (5): 647/909 kB | 442/907 kB | 356/465 kB | 241 kB | 95/299 kB
+Progress (5): 647/909 kB | 459/907 kB | 356/465 kB | 241 kB | 95/299 kB
+                                                                       
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5-h2/5.3.3/httpcore5-h2-5.3.3.jar (241 kB at 548 kB/s)
+Progress (4): 647/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 664/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 680/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 696/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 713/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 729/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 745/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 762/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 778/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 795/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 811/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 827/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 844/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 860/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 877/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 893/909 kB | 475/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 356/465 kB | 95/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 372/465 kB | 95/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 372/465 kB | 99/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 388/465 kB | 99/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 388/465 kB | 104/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 388/465 kB | 108/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 388/465 kB | 112/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 405/465 kB | 112/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 405/465 kB | 116/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 405/465 kB | 121/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 421/465 kB | 121/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 438/465 kB | 121/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 438/465 kB | 125/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 438/465 kB | 129/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 438/465 kB | 133/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 438/465 kB | 137/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 438/465 kB | 142/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 454/465 kB | 142/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 454/465 kB | 146/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 465 kB | 146/299 kB    
+Progress (4): 893/909 kB | 492/907 kB | 465 kB | 150/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 465 kB | 154/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 465 kB | 159/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 465 kB | 163/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 465 kB | 167/299 kB
+Progress (4): 893/909 kB | 492/907 kB | 465 kB | 171/299 kB
+Progress (4): 893/909 kB | 508/907 kB | 465 kB | 171/299 kB
+Progress (4): 909 kB | 508/907 kB | 465 kB | 171/299 kB    
+Progress (4): 909 kB | 524/907 kB | 465 kB | 171/299 kB
+Progress (4): 909 kB | 541/907 kB | 465 kB | 171/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 171/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 175/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 180/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 184/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 188/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 188/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 193/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 197/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 201/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 205/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 210/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 214/299 kB
+Progress (4): 909 kB | 557/907 kB | 465 kB | 218/299 kB
+                                                       
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/3.4.4/spring-boot-loader-tools-3.4.4.jar (465 kB at 907 kB/s)
+Progress (3): 909 kB | 557/907 kB | 234/299 kB
+Progress (3): 909 kB | 573/907 kB | 234/299 kB
+Progress (3): 909 kB | 590/907 kB | 234/299 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/client5/httpclient5/5.4.2/httpclient5-5.4.2.jar (909 kB at 1.7 MB/s)
+Progress (2): 606/907 kB | 234/299 kB
+Progress (2): 623/907 kB | 234/299 kB
+Progress (2): 639/907 kB | 234/299 kB
+Progress (2): 639/907 kB | 251/299 kB
+Progress (2): 639/907 kB | 267/299 kB
+Progress (2): 639/907 kB | 284/299 kB
+Progress (2): 639/907 kB | 299 kB    
+Progress (2): 655/907 kB | 299 kB
+Progress (2): 672/907 kB | 299 kB
+Progress (2): 688/907 kB | 299 kB
+Progress (2): 705/907 kB | 299 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/3.4.4/spring-boot-buildpack-platform-3.4.4.jar (299 kB at 529 kB/s)
+Progress (1): 721/907 kB
+Progress (1): 737/907 kB
+Progress (1): 754/907 kB
+Progress (1): 770/907 kB
+Progress (1): 786/907 kB
+Progress (1): 803/907 kB
+Progress (1): 819/907 kB
+Progress (1): 836/907 kB
+Progress (1): 852/907 kB
+Progress (1): 868/907 kB
+Progress (1): 885/907 kB
+Progress (1): 901/907 kB
+Progress (1): 907 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/core5/httpcore5/5.3.3/httpcore5-5.3.3.jar (907 kB at 1.4 MB/s)
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2026-03-30T22:57:18.796+05:30  INFO 14972 --- [campustrack-backend] [           main] com.campustrack.CampusTrackApplication   : Starting CampusTrackApplication using Java 25 with PID 14972 (C:\mini project\campustrack-backend\campustrack-backend\target\classes started by phabb in C:\mini project\campustrack-backend\campustrack-backend)
+2026-03-30T22:57:18.799+05:30 DEBUG 14972 --- [campustrack-backend] [           main] com.campustrack.CampusTrackApplication   : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-03-30T22:57:18.799+05:30  INFO 14972 --- [campustrack-backend] [           main] com.campustrack.CampusTrackApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-03-30T22:57:19.381+05:30  INFO 14972 --- [campustrack-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-30T22:57:19.465+05:30  INFO 14972 --- [campustrack-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+2026-03-30T22:57:20.022+05:30  INFO 14972 --- [campustrack-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-30T22:57:20.035+05:30  INFO 14972 --- [campustrack-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-30T22:57:20.035+05:30  INFO 14972 --- [campustrack-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-03-30T22:57:20.104+05:30  INFO 14972 --- [campustrack-backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-30T22:57:20.105+05:30  INFO 14972 --- [campustrack-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1258 ms
+2026-03-30T22:57:20.221+05:30  INFO 14972 --- [campustrack-backend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-30T22:57:20.267+05:30  INFO 14972 --- [campustrack-backend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-03-30T22:57:20.319+05:30  INFO 14972 --- [campustrack-backend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-30T22:57:20.606+05:30  INFO 14972 --- [campustrack-backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-30T22:57:20.645+05:30  INFO 14972 --- [campustrack-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-30T22:57:20.814+05:30  INFO 14972 --- [campustrack-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:campustrack_db user=SA
+2026-03-30T22:57:20.815+05:30  INFO 14972 --- [campustrack-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-30T22:57:20.867+05:30  INFO 14972 --- [campustrack-backend] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-30T22:57:21.844+05:30  INFO 14972 --- [campustrack-backend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    create table issues (
+        id bigint generated by default as identity,
+        category enum ('ACADEMIC','FACILITIES','INFRASTRUCTURE','IT_NETWORK','SAFETY') not null,
+        created_at timestamp(6) not null,
+        description TEXT,
+        issue_number varchar(20) not null,
+        location varchar(255) not null,
+        priority enum ('CRITICAL','HIGH','LOW','MEDIUM') not null,
+        resolved_at timestamp(6),
+        status enum ('CLOSED','IN_PROGRESS','OPEN','RESOLVED') not null,
+        title varchar(255) not null,
+        updated_at timestamp(6),
+        assigned_to_id bigint,
+        reported_by_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table users (
+        id bigint generated by default as identity,
+        created_at timestamp(6) not null,
+        department varchar(255),
+        email varchar(255) not null,
+        full_name varchar(255) not null,
+        initials varchar(5),
+        password varchar(255) not null,
+        role enum ('ADMIN','STAFF','STUDENT') not null,
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists issues 
+       drop constraint if exists UKqht1b6e4c61jdk2s5nekot36i
+Hibernate: 
+    alter table if exists issues 
+       add constraint UKqht1b6e4c61jdk2s5nekot36i unique (issue_number)
+Hibernate: 
+    alter table if exists users 
+       drop constraint if exists UK6dotkott2kjsp8vw4d0m25fb7
+Hibernate: 
+    alter table if exists users 
+       add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+Hibernate: 
+    alter table if exists issues 
+       add constraint FKiq5i3rqe14hrpmj6wcsy1tu73 
+       foreign key (assigned_to_id) 
+       references users
+Hibernate: 
+    alter table if exists issues 
+       add constraint FKjgt23cp2kj1kcu8ssb04erim4 
+       foreign key (reported_by_id) 
+       references users
+2026-03-30T22:57:21.915+05:30  INFO 14972 --- [campustrack-backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-30T22:57:22.276+05:30 DEBUG 14972 --- [campustrack-backend] [           main] com.campustrack.security.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2026-03-30T22:57:22.312+05:30  INFO 14972 --- [campustrack-backend] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-30T22:57:23.223+05:30  WARN 14972 --- [campustrack-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-03-30T22:57:23.830+05:30  INFO 14972 --- [campustrack-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-30T22:57:23.838+05:30  INFO 14972 --- [campustrack-backend] [           main] com.campustrack.CampusTrackApplication   : Started CampusTrackApplication in 5.511 seconds (process running for 5.866)
+Hibernate: 
+    select
+        count(*) 
+    from
+        users u1_0
+2026-03-30T22:57:23.913+05:30  INFO 14972 --- [campustrack-backend] [           main] com.campustrack.config.DataSeeder        : Seeding demo data ΓÇª
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, department, email, full_name, initials, password, role, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, department, email, full_name, initials, password, role, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, department, email, full_name, initials, password, role, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, department, email, full_name, initials, password, role, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, department, email, full_name, initials, password, role, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, department, email, full_name, initials, password, role, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    insert 
+    into
+        issues
+        (assigned_to_id, category, created_at, description, issue_number, location, priority, reported_by_id, resolved_at, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    insert 
+    into
+        issues
+        (assigned_to_id, category, created_at, description, issue_number, location, priority, reported_by_id, resolved_at, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    insert 
+    into
+        issues
+        (assigned_to_id, category, created_at, description, issue_number, location, priority, reported_by_id, resolved_at, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    insert 
+    into
+        issues
+        (assigned_to_id, category, created_at, description, issue_number, location, priority, reported_by_id, resolved_at, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    insert 
+    into
+        issues
+        (assigned_to_id, category, created_at, description, issue_number, location, priority, reported_by_id, resolved_at, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    insert 
+    into
+        issues
+        (assigned_to_id, category, created_at, description, issue_number, location, priority, reported_by_id, resolved_at, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    insert 
+    into
+        issues
+        (assigned_to_id, category, created_at, description, issue_number, location, priority, reported_by_id, resolved_at, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    insert 
+    into
+        issues
+        (assigned_to_id, category, created_at, description, issue_number, location, priority, reported_by_id, resolved_at, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    insert 
+    into
+        issues
+        (assigned_to_id, category, created_at, description, issue_number, location, priority, reported_by_id, resolved_at, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    insert 
+    into
+        issues
+        (assigned_to_id, category, created_at, description, issue_number, location, priority, reported_by_id, resolved_at, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    insert 
+    into
+        issues
+        (assigned_to_id, category, created_at, description, issue_number, location, priority, reported_by_id, resolved_at, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    insert 
+    into
+        issues
+        (assigned_to_id, category, created_at, description, issue_number, location, priority, reported_by_id, resolved_at, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        users u1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+2026-03-30T22:57:24.594+05:30  INFO 14972 --- [campustrack-backend] [           main] com.campustrack.config.DataSeeder        : Demo data seeded: 6 users, 12 issues
+2026-03-30T23:04:05.085+05:30  INFO 14972 --- [campustrack-backend] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-30T23:04:05.086+05:30  INFO 14972 --- [campustrack-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-30T23:04:05.090+05:30  INFO 14972 --- [campustrack-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.assigned_to_id,
+        i1_0.category,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.issue_number,
+        i1_0.location,
+        i1_0.priority,
+        i1_0.reported_by_id,
+        i1_0.resolved_at,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc
+Hibernate: 
+    select
+        i1_0.location,
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    group by
+        i1_0.location 
+    order by
+        2 desc
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.assigned_to_id,
+        i1_0.category,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.issue_number,
+        i1_0.location,
+        i1_0.priority,
+        i1_0.reported_by_id,
+        i1_0.resolved_at,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.updated_at desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.assigned_to_id,
+        i1_0.category,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.issue_number,
+        i1_0.location,
+        i1_0.priority,
+        i1_0.reported_by_id,
+        i1_0.resolved_at,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        i1_0.location,
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    group by
+        i1_0.location 
+    order by
+        2 desc
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.assigned_to_id,
+        i1_0.category,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.issue_number,
+        i1_0.location,
+        i1_0.priority,
+        i1_0.reported_by_id,
+        i1_0.resolved_at,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.updated_at desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        i1_0.location,
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    group by
+        i1_0.location 
+    order by
+        2 desc
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.assigned_to_id,
+        i1_0.category,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.issue_number,
+        i1_0.location,
+        i1_0.priority,
+        i1_0.reported_by_id,
+        i1_0.resolved_at,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.updated_at desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.assigned_to_id,
+        i1_0.category,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.issue_number,
+        i1_0.location,
+        i1_0.priority,
+        i1_0.reported_by_id,
+        i1_0.resolved_at,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.assigned_to_id,
+        i1_0.category,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.issue_number,
+        i1_0.location,
+        i1_0.priority,
+        i1_0.reported_by_id,
+        i1_0.resolved_at,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        i1_0.location,
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    group by
+        i1_0.location 
+    order by
+        2 desc
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.assigned_to_id,
+        i1_0.category,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.issue_number,
+        i1_0.location,
+        i1_0.priority,
+        i1_0.reported_by_id,
+        i1_0.resolved_at,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.updated_at desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        i1_0.location,
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    group by
+        i1_0.location 
+    order by
+        2 desc
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.assigned_to_id,
+        i1_0.category,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.issue_number,
+        i1_0.location,
+        i1_0.priority,
+        i1_0.reported_by_id,
+        i1_0.resolved_at,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.updated_at desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.assigned_to_id,
+        i1_0.category,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.issue_number,
+        i1_0.location,
+        i1_0.priority,
+        i1_0.reported_by_id,
+        i1_0.resolved_at,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.assigned_to_id,
+        i1_0.category,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.issue_number,
+        i1_0.location,
+        i1_0.priority,
+        i1_0.reported_by_id,
+        i1_0.resolved_at,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.created_at desc
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        i1_0.location,
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    group by
+        i1_0.location 
+    order by
+        2 desc
+Hibernate: 
+    select
+        i1_0.id,
+        i1_0.assigned_to_id,
+        i1_0.category,
+        i1_0.created_at,
+        i1_0.description,
+        i1_0.issue_number,
+        i1_0.location,
+        i1_0.priority,
+        i1_0.reported_by_id,
+        i1_0.resolved_at,
+        i1_0.status,
+        i1_0.title,
+        i1_0.updated_at 
+    from
+        issues i1_0 
+    order by
+        i1_0.updated_at desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.department,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.initials,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        issues i1_0
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.status=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.priority=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?
+Hibernate: 
+    select
+        count(i1_0.id) 
+    from
+        issues i1_0 
+    where
+        i1_0.category=?

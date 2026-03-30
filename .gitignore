@@ -1,0 +1,21 @@
+# Frontend
+node_modules/
+dist/
+.env
+
+# Backend
+target/
+*.jar
+*.war
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
