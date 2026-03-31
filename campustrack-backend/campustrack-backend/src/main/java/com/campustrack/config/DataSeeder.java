@@ -22,14 +22,21 @@ public class DataSeeder implements CommandLineRunner {
     @Override
     public void run(String... args) {
         if (userRepo.existsByEmail("admin@campus.edu")) {
-            log.info("Database already seeded — skipping.");
+            userRepo.findByEmail("admin@campus.edu").ifPresent(existing -> {
+                if (!existing.getFullName().equals("Deepesh Phabba")) {
+                    existing.setFullName("Deepesh Phabba");
+                    userRepo.save(existing);
+                    log.info("Updated existing admin name to Deepesh Phabba.");
+                }
+            });
+            log.info("Database already seeded — skipping full seed.");
             return;
         }
 
         log.info("Seeding demo data …");
 
         // ── Users ──────────────────────────────────────────────────────
-        User admin = saveUser("Ravi Kumar",     "admin@campus.edu",   "password", User.Role.ADMIN, "Facilities");
+        User admin = saveUser("Deepesh Phabba", "admin@campus.edu",   "password", User.Role.ADMIN, "Facilities");
         User staff1 = saveUser("Priya Sharma",  "priya@campus.edu",   "password", User.Role.STAFF, "IT");
         User staff2 = saveUser("Arun Mehta",    "arun@campus.edu",    "password", User.Role.STAFF, "Infrastructure");
         User stu1   = saveUser("Sneha Reddy",   "sneha@campus.edu",   "password", User.Role.STUDENT, "CSE");

@@ -60,7 +60,7 @@ const NAV_MAIN = [
     icon:<svg className="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><path d="M2 5h12M2 8h8M2 11h5"/></svg> },
   { label:'My Reports', pill:null, pillCls:'',
     icon:<svg className="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><path d="M8 1v7M5 4l3-3 3 3M2 11c0 2 2.7 3.5 6 3.5s6-1.5 6-3.5"/></svg> },
-  { label:'Pending Review', pill:'17', pillCls:'hot',
+  { label:'Pending Review', pill: null, pillCls:'hot',
     icon:<svg className="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg> },
 ]
 
@@ -101,11 +101,17 @@ export default function Dashboard({ user, onLogout }) {
   const [issues,      setIssues]      = useState([])
   const [loadingStats,setLoadingStats] = useState(true)
   const [loadingIssues,setLoadingIssues]=useState(true)
+  const [assignedCount, setAssignedCount] = useState(0)
   const [apiError,    setApiError]    = useState('')
 
   const [users, setUsers] = useState([])
   const [staff, setStaff] = useState([])
   const [showNotif, setShowNotif] = useState(false)
+  
+  const isAdmin   = user?.rawRole === 'ADMIN' || user?.role?.startsWith('ADMIN')
+  const isStaff   = user?.rawRole === 'STAFF' || user?.role?.startsWith('STAFF')
+  const isStudent = user?.rawRole === 'STUDENT' || user?.role?.startsWith('STUDENT')
+  const canManage = isAdmin || isStaff
 
   // Fetch stats and lists
   useEffect(() => {
@@ -116,6 +122,9 @@ export default function Dashboard({ user, onLogout }) {
       
     usersApi.getAll().then(r => setUsers(r.data)).catch(console.error)
     usersApi.getStaff().then(r => setStaff(r.data)).catch(console.error)
+    
+    // Initial assigned count
+    issuesApi.getAssigned().then(r => setAssignedCount(r.data.length)).catch(console.error)
   }, [])
 
   // Fetch issues (re-runs when filter/nav/search changes)
@@ -155,6 +164,7 @@ export default function Dashboard({ user, onLogout }) {
           data = data.filter(i => i.title.toLowerCase().includes(sq) || (i.location && i.location.toLowerCase().includes(sq)) || (i.issueNumber && i.issueNumber.toLowerCase().includes(sq)))
         }
         setIssues(data)
+        if (activeNav === 'Pending Review') setAssignedCount(data.length)
       })
       .catch(() => setApiError('Could not load issues from backend.'))
       .finally(() => setLoadingIssues(false))
@@ -399,12 +409,17 @@ export default function Dashboard({ user, onLogout }) {
 
           <div className="nav-group" style={{marginTop:8}}>
             <div className="nav-group-label">Main</div>
-            {NAV_MAIN.map(n => (
+            {NAV_MAIN.filter(n => {
+              if (n.label === 'Pending Review' && isStudent) return false;
+              return true;
+            }).map(n => (
               <div key={n.label} className={`nav-item${activeNav===n.label?' active':''}`} onClick={() => setActiveNav(n.label)}>
                 {n.icon}{n.label}
                 {n.label === 'All Issues' && stats
                   ? <span className={`nav-pill ${n.pillCls}`}>{stats.totalIssues}</span>
-                  : n.pill && <span className={`nav-pill ${n.pillCls}`}>{n.pill}</span>
+                  : n.label === 'Pending Review'
+                    ? (assignedCount > 0 && <span className={`nav-pill ${n.pillCls}`}>{assignedCount}</span>)
+                    : n.pill && <span className={`nav-pill ${n.pillCls}`}>{n.pill}</span>
                 }
               </div>
             ))}
@@ -423,20 +438,22 @@ export default function Dashboard({ user, onLogout }) {
 
           <div className="sidebar-divider" />
 
-          <div className="nav-group">
-            <div className="nav-group-label">Insights</div>
-            {NAV_INSIGHTS.map(n => (
-              <div key={n.label} className={`nav-item${activeNav===n.label?' active':''}`} onClick={() => setActiveNav(n.label)}>
-                {n.icon}{n.label}
-              </div>
-            ))}
-          </div>
+          {canManage && (
+            <div className="nav-group">
+                <div className="nav-group-label">Insights</div>
+                {NAV_INSIGHTS.map(n => (
+                  <div key={n.label} className={`nav-item${activeNav===n.label?' active':''}`} onClick={() => setActiveNav(n.label)}>
+                    {n.icon}{n.label}
+                  </div>
+                ))}
+            </div>
+          )}
 
           <div className="sidebar-bottom">
             <div className="user-card" onClick={onLogout} title="Click to logout">
-              <div className="user-avatar">{user?.initials || 'SR'}</div>
+              <div className="user-avatar">{user?.initials || 'DP'}</div>
               <div>
-                <div className="user-name">{user?.name || 'S. Ravi Kumar'}</div>
+                <div className="user-name">{user?.name || 'Deepesh Phabba'}</div>
                 <div className="user-role">{user?.role || 'Admin · Facilities Dept.'}</div>
               </div>
               <div className="user-status" />
@@ -492,9 +509,9 @@ export default function Dashboard({ user, onLogout }) {
 
           {/* BODY */}
           <div className="content-body">
-            {isTeam ? (
+            {isTeam && canManage ? (
               <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>{teamPanel}</div>
-            ) : (!isDashboard && !isAnalytics) ? (
+            ) : (!isDashboard && !isAnalytics && !isTeam) ? (
               <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>{issuePanel}</div>
             ) : (
               <>
@@ -728,29 +745,31 @@ export default function Dashboard({ user, onLogout }) {
                     {detailIssue.description}
                   </div>
 
-                  <div style={{borderTop:'1px solid var(--border)',paddingTop:24}}>
-                    <div style={{fontWeight:600,color:'var(--text-primary)',marginBottom:12,fontSize:13}}>Manage Workflow</div>
-                    <div style={{display:'flex',gap:10,flexWrap:'wrap'}}>
-                      {detailIssue.status !== 'IN_PROGRESS' && <button className="topbar-btn" onClick={()=>handleUpdateStatus('IN_PROGRESS')}><span style={{color:'var(--amber)'}}>●</span> Mark In Progress</button>}
-                      {detailIssue.status !== 'RESOLVED' && <button className="topbar-btn" onClick={()=>handleUpdateStatus('RESOLVED')}><span style={{color:'var(--green)'}}>●</span> Resolve Issue</button>}
-                      {detailIssue.status !== 'CLOSED' && <button className="topbar-btn" onClick={()=>handleUpdateStatus('CLOSED')}>Close Issue</button>}
-                    </div>
+                  {canManage && (
+                    <div style={{borderTop:'1px solid var(--border)',paddingTop:24}}>
+                      <div style={{fontWeight:600,color:'var(--text-primary)',marginBottom:12,fontSize:13}}>Manage Workflow</div>
+                      <div style={{display:'flex',gap:10,flexWrap:'wrap'}}>
+                        {detailIssue.status !== 'IN_PROGRESS' && <button className="topbar-btn" onClick={()=>handleUpdateStatus('IN_PROGRESS')}><span style={{color:'var(--amber)'}}>●</span> Mark In Progress</button>}
+                        {detailIssue.status !== 'RESOLVED' && <button className="topbar-btn" onClick={()=>handleUpdateStatus('RESOLVED')}><span style={{color:'var(--green)'}}>●</span> Resolve Issue</button>}
+                        {detailIssue.status !== 'CLOSED' && <button className="topbar-btn" onClick={()=>handleUpdateStatus('CLOSED')}>Close Issue</button>}
+                      </div>
 
-                    <div style={{marginTop:24}}>
-                      <div style={{fontWeight:600,color:'var(--text-primary)',marginBottom:8,fontSize:13}}>Assign To Staff</div>
-                      <select className="topbar-btn" style={{width:'100%',background:'#fff',padding:10,fontFamily:'inherit'}} value={detailIssue.assignedTo?.id || 0} onChange={e=>handleAssign(e.target.value)}>
-                        <option value={0}>Unassigned</option>
-                        {staff.map(s => <option key={s.id} value={s.id}>{s.fullName} ({s.department})</option>)}
-                      </select>
+                      <div style={{marginTop:24}}>
+                        <div style={{fontWeight:600,color:'var(--text-primary)',marginBottom:8,fontSize:13}}>Assign To Staff</div>
+                        <select className="topbar-btn" style={{width:'100%',background:'#fff',padding:10,fontFamily:'inherit'}} value={detailIssue.assignedTo?.id || 0} onChange={e=>handleAssign(e.target.value)}>
+                          <option value={0}>Unassigned</option>
+                          {staff.map(s => <option key={s.id} value={s.id}>{s.fullName} ({s.department})</option>)}
+                        </select>
+                      </div>
+                      
+                      <div style={{marginTop:32, paddingTop:16, borderTop:'1px dotted var(--border)'}}>
+                        <button className="topbar-btn" style={{color:'var(--red)',borderColor:'var(--red-bg)',background:'var(--red-bg)'}} onClick={handleDelete}>
+                          <svg viewBox="0 0 16 16" width="14" fill="none" stroke="currentColor"><path d="M3 4h10M6 4V2h4v2" /><rect x="4" y="4" width="8" height="10" rx="1" /></svg>
+                          Delete Issue
+                        </button>
+                      </div>
                     </div>
-                    
-                    <div style={{marginTop:32, paddingTop:16, borderTop:'1px dotted var(--border)'}}>
-                      <button className="topbar-btn" style={{color:'var(--red)',borderColor:'var(--red-bg)',background:'var(--red-bg)'}} onClick={handleDelete}>
-                        <svg viewBox="0 0 16 16" width="14" fill="none" stroke="currentColor"><path d="M3 4h10M6 4V2h4v2" /><rect x="4" y="4" width="8" height="10" rx="1" /></svg>
-                        Delete Issue
-                      </button>
-                    </div>
-                  </div>
+                  )}
                 </div>
               </div>
             </div>
